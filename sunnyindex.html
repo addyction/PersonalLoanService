@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Loan Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Personal Loan Services</h1>
+    <p>Your Trusted Partner for Fast and Easy Loans</p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#apply">Apply for Loan</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="about">
+    <h2>About Us</h2>
+    <p>We offer quick and hassle-free personal loans tailored to your needs. Whether you need funds for a medical emergency, home renovation, or other personal needs, we are here to help. Our application process is simple, and we provide competitive rates with flexible terms.</p>
+</div>
+
+<div class="container" id="apply">
+    <h2>Apply for a Loan</h2>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+        <label for="loan-amount">Loan Amount</label>
+        <select id="loan-amount" name="loan-amount" required>
+            <option value="1000">$1,000</option>
+            <option value="5000">$5,000</option>
+            <option value="10000">$10,000</option>
+            <option value="20000">$20,000</option>
+        </select>
+
+        <label for="employment">Employment Status</label>
+        <select id="employment" name="employment" required>
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self-Employed</option>
+            <option value="unemployed">Unemployed</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+    <p>Email: <a href="mailto:support@loanservice.com">support@loanservice.com</a></p>
+    <p>Phone: 1-800-123-4567</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Personal Loan Service. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
